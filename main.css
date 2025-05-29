@@ -100,6 +100,16 @@ img {
   border-radius: 0px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-item.wide {
+  grid-column: span 2;
+}
+
 .masonry {
   column-count: 2; /* ⭐ 设置为2列，图片会更大 */
   column-gap: 0.5rem;
@@ -107,7 +117,8 @@ img {
 }
 
 .masonry img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
   margin-bottom: 0.5rem;
