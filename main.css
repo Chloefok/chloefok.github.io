@@ -238,7 +238,7 @@ img {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family:  "fzm-old-typewriter", serif;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -4748,3 +4748,17 @@ img {
 		}
 
 	}
+
+	.container {
+  max-width: 95vw;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+	}
+
+	#main {
+  max-width: 95vw !important;  /* 或者 100vw */
+  width: 100% !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
