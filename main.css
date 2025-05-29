@@ -117,8 +117,8 @@ img {
 }
 
 .masonry img {
-  width: auto;
-  max-width: 50%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin-bottom: 0.5rem;
