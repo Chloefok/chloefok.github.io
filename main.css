@@ -79,6 +79,19 @@ input, select, textarea {
 	appearance: none;
 }
 /* 自己加的 */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .gallery {
   display: block;
 }
