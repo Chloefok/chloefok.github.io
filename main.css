@@ -3,8 +3,6 @@
 @font-face {
   font-family: "fzm-old-typewriter";
   src: url("webfonts/fzm-old-typewriter.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 /*
@@ -80,11 +78,10 @@ input, select, textarea {
 }
 /* 自己加的 */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "fzm-old-typewriter", serif;
 }
+
 
 img {
   max-width: 100%;
@@ -103,34 +100,23 @@ img {
   border-radius: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "fzm-old-typewriter", serif;
+.masonry {
+  column-count: 2; /* ⭐ 设置为2列，图片会更大 */
+  column-gap: 0.5rem;
+  padding: 2rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 改成固定 3 列 */
-  grid-auto-rows: auto;
-  gap: 1rem;
-}
-
-
-.grid-item img {
+.masonry img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0;
+  margin-bottom: 0.5rem;
+  break-inside: avoid;
 }
 
-/* 控制放大效果 */
-.grid-item.wide {
-  grid-column: 1 / -1;
+.masonry img.wide {
+  width: 200%;
 }
-
-.grid-item.tall {
-  grid-row: span 2;
-}
-
 
 /* Basic */
 
